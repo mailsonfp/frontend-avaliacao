@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Avaliação Sinapsis - Listagem de SubEstações</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/listagem.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel panel-primary div-titulo">
+                <div class="panel-heading">
+                    <h1 class="panel-title">Teste Desenvolvedor Java - Versão 1.5</h1>
+                </div>
+            </div>
+            <div class="table-responsive table-principal">
+                <table class="table table-striped table-bordered table-hover ">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nome</th>
+                            <th class="text-center">Excluir</th>
+                            <th class="text-center">Alterar</th>
+                            <th class="text-center">Exibir no mapa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AML</td>
+                            <td>Subestação A</td>
+                            <td class="text-center"> <a href="">Excluir</a></td>
+                            <td class="text-center"> <a href="" title="Editar" data-toggle="tooltip"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                            <td class="text-center"> <a href="" title="Exibir no mapa" data-toggle="tooltip"><span class="glyphicon glyphicon-globe"></a></td>
+                        </tr>
+                        <tr>
+                            <td>MKP</td>
+                            <td>Subestação B</td>
+                            <td class="text-center"> <a href="">Excluir</a></td>
+                            <td class="text-center"> <a href=""><span class="glyphicon glyphicon-pencil"></span></a></td>
+                            <td class="text-center"> <a href=""><span class="glyphicon glyphicon-globe"></a></td>
+                        </tr>
+                        <tr>
+                            <td>ZFA</td>
+                            <td>SubEstação C</td>
+                            <td class="text-center"> <a href="">Excluir</a></td>
+                            <td class="text-center"> <a href=""><span class="glyphicon glyphicon-pencil"></span></a></td>
+                            <td class="text-center"> <a href=""><span class="glyphicon glyphicon-globe"></a></td>
+                        </tr>
+                    </tbody>
+                </table>                           
+            </div>
+            <form action="manutencao-subestacao.html">
+                <footer class="table-principal">
+                    <button type="submit" class="btn btn-primary pull-right">Incluir</button>
+                </footer>
+            </form>
+        </div>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/listagem.js"></script>
+    </body>
+</html>

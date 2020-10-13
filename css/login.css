@@ -1,0 +1,30 @@
+body {
+	max-height: 100vh;
+}
+.login-div{
+    float: right;
+    width: 80%;
+    margin-top: 20px;
+    margin-right: 10%;
+    background-image: url("../img/electric-grid.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.login-form {
+	margin-top: 50vh;
+	padding: 20px 30px;
+	background-color: rgba(66,139,202, 0.9);
+	color: #FFF;
+
+	transform: translateY(-50%);
+}
+
+.login-form h1 {
+	margin: 0 0 5px;
+}
+
+.login-form h2 {
+	margin: 0 0 30px;
+	font-size: 1em;
+}

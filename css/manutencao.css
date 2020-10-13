@@ -1,0 +1,27 @@
+.div-titulo{
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+    float: right;
+}
+footer{
+    width: 90%;
+    float: right;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.botoes-oper{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.form-custom{
+    margin: 20px;
+}
+
+.table-principal{
+    width: 90%;
+    float: right;
+    margin-right: 5%;
+    margin-left: 5%;
+}
