@@ -25,3 +25,8 @@ footer{
     margin-right: 5%;
     margin-left: 5%;
 }
+
+.action {
+    color: #337ab7;
+    cursor: pointer;
+}
