@@ -18,7 +18,7 @@ export function Manutencao(props) {
       setSubEstacao(subestacao);
     }
     getData();
-  }, []);
+  }, [codigo]);
 
   return (
     <div className="container">

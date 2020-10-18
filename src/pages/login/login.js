@@ -10,7 +10,7 @@ export function Login() {
     window.location.href = '/';
   }
 
-  if (isLogged) return <Redirect to="/" />
+  if (isLogged()) return <Redirect to="/" />
 
   return (
     <div className="panel panel-primary login-div">
