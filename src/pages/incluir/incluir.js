@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { insertSubEstacao } from '../../services';
 import { SubEstacaoForm } from '../../components/subestacao-form/subestacao-form';
-import { Cabecalho } from '../../components/cabecalho';
+import { Cabecalho } from '../../components/cabecalho/cabecalho';
 
 export function Incluir() {
   const [subEstacao, setSubEstacao] = useState({ redesMt: [] });

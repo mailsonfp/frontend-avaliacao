@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Cabecalho } from '../../components/cabecalho';
+import { Cabecalho } from '../../components/cabecalho/cabecalho';
 import { getSubEstacoes, removeSubEstacao } from '../../services';
 import './listagem.css';
 
@@ -45,11 +45,15 @@ export function Listagem() {
                   <span onClick={() => handleRemove(subestacao.codigo)} className='action'>Excluir</span>
                 </td>
                 <td className="text-center">
-                  <a href={`/manutencao/${subestacao.codigo}`} title="Alterar" data-toggle="tooltip">
+                  <a href={`/manutencao/${subestacao.codigo}`} title="Alterar">
                     <span className="action glyphicon glyphicon-pencil" />
                   </a>
                 </td>
-                <td className="text-center"><span className="glyphicon glyphicon-globe" /></td>
+                <td className="text-center">
+                  <a href="" title="Visualizar mapa">
+                    <span className="glyphicon glyphicon-globe" />
+                  </a>
+                </td>
               </tr>
             ))}
 

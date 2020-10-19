@@ -5,6 +5,7 @@ export function isLogged() {
 }
 
 export function login() {
+  debugger;
   localStorage.setItem(LOGGED_KEY, LOGGED_KEY);
 }
 

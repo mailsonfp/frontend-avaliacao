@@ -68,7 +68,7 @@ export function SubEstacaoForm(props) {
   }
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit}>      
       <div className="panel panel-primary div-titulo">
         <div className="panel-heading">
           <h1 className="panel-title">SubEstação</h1>
@@ -144,12 +144,21 @@ export function SubEstacaoForm(props) {
 
           <div className="form-group row">
             <label className="col-sm-2 col-form-label" htmlFor="tensaoRedeMT">Tensão Nominal:</label>
-            <div className="col-sm-10">
+            <div className="col-sm-4">
               <input
                 value={redeAtiva.tensao_nominal || ''}
                 onChange={handleChangeRede('tensao_nominal')}
                 className="form-control" type="text" id="tensaoRedeMT" />
             </div>
+          </div>
+          <div className="footer">
+            {
+              <button
+                onClick={handleRedeUpsert}
+                className="btn btn-primary pull-right">
+                {redeStatus === 'updating' ? 'Atualizar' : 'Inserir'}
+              </button>
+            }
           </div>
           <div className="table-responsive table-principal">
             <table className="table table-striped table-bordered table-hover ">
@@ -179,19 +188,12 @@ export function SubEstacaoForm(props) {
                   </tr>
                 ))}
               </tbody>
-            </table>
-            {
-              <button
-                onClick={handleRedeUpsert}
-                className="btn btn-primary pull-right">
-                {redeStatus === 'updating' ? 'Atualizar' : 'Inserir'}
-              </button>
-            }
+            </table>            
           </div>
         </div>
       </div>
 
-      <footer role="group">
+      <footer className="footer">
         <button type="submit" className="btn btn-primary pull-right">Efetivar operação</button>
         <button onClick={() => {
           window.location = '/'

@@ -1,0 +1,11 @@
+.head{
+    float: left;
+    width: 90%;
+}
+
+.action-cabecalho {
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #337ab7;
+}

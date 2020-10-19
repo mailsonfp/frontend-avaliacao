@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getSubEstacao, updateSubEstacao } from '../../services';
 import { SubEstacaoForm } from '../../components/subestacao-form/subestacao-form';
-import { Cabecalho } from '../../components/cabecalho';
+import { Cabecalho } from '../../components/cabecalho/cabecalho';
 
 export function Manutencao(props) {
   const codigo = props.match.params.codigo;

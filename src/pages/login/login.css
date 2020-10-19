@@ -17,7 +17,7 @@ body {
 	background-color: rgba(66,139,202, 0.9);
 	color: #FFF;
 
-	transform: translateY(-50%);
+	transform: translateY(-5%);
 }
 
 .login-form h1 {
