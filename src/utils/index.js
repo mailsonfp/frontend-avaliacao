@@ -11,4 +11,5 @@ export function login() {
 
 export function logout() {
   localStorage.removeItem(LOGGED_KEY);
+  window.location = '/login';
 }
